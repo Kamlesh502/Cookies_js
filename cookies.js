@@ -30,8 +30,8 @@ function check_status() {
     console.log("Cookies are already set with value:" + value);
   }
 }
+window.addEventListener("DOMContentLoaded", check_status);
 
-check_status();
 console.log(navigator.appCodeName);
 
 if (/Mobi|Android/i.test(navigator.userAgent)) {
