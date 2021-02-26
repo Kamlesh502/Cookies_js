@@ -30,7 +30,7 @@ function check_status() {
     console.log("Cookies are already set with value:" + value);
   }
 }
-window.addEventListener("DOMContentLoaded", check_status);
+document.addEventListener("DOMContentLoaded", check_status);
 
 console.log(navigator.appCodeName);
 
