@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="shortcut icon" href="#">
+  <style>
+    body {
+      background-color: linen;
+    }
+
+    .urls {
+      display: flex;
+      flex-direction: columns;
+      margin-top: 5px;
+
+
+    }
+
+    .Textfields {
+      display: flex;
+      flex-direction: columns;
+      margin-top: 5px;
+      width: 150px;
+      height: 20px;
+
+    }
+
+    #submit {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- <button id="set_cookie_button">Set Cookie</button> -->
+  <div style="display: flex; flex-direction: column"></div>
+
+  <input id="name" class="Textfields" type="text" placeholder="name" />
+  <input id="firstname" class="Textfields" type="text" placeholder="firstname" />
+  <input id="lastname" class="Textfields" type="text" placeholder="lastname" />
+
+  <a href="https://www.google.com/" class="urls" id="url1" target="_blank">google</a>
+  <a href="https://www.kapitalwise.com/" class="urls" id="url2" target="_blank">kapitalwise</a>
+  <a href="https://www.kapitalwise.com/blogs/" class="urls " id="url3" target="_blank">kapitalwise_blogs</a>
+
+  <button id="submit">Submit</button>
+  <button id="apicall">CallApi</button>
+
+  <!-- <script src="cookies.js"></script> -->
+  <script src="script.js"></script>
+  <script src="cookies.js"></script>
+  </div>
+</body>
+
+</html>
