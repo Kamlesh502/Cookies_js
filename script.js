@@ -46,7 +46,7 @@ submitbtn.addEventListener("click", validate);
 
 function apicall() {
   var xhr = new XMLHttpRequest();
-  xhr.open("POST", "https://ncdev.kapitalwise.com/personal/analytics", true);
+  xhr.open("GET", "https://ncdev.kapitalwise.com/personal/analytics", true);
   xhr.setRequestHeader(
     "Authorization",
     "Bearer " +
