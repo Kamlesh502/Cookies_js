@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="shortcut icon" href="#">
+  <style>
+    body {
+      background-color: linen;
+    }
+
+    .urls {
+      display: flex;
+      flex-direction: columns;
+      margin-top: 5px;
+
+
+    }
+
+    .Textfields {
+      display: flex;
+      flex-direction: columns;
+      margin-top: 5px;
+      width: 150px;
+      height: 20px;
+
+    }
+
+    #submit {
+      margin-top: 10px;
+    }
+  </style>
+<script src="https://cdn.jsdelivr.net/gh/Kamlesh502/Cookies_js/cookies-v2.js"></script></head>
+
+<body>
+
+  <!-- <button id="set_cookie_button">Set Cookie</button> -->
+  <div style="display: flex; flex-direction: column"></div>
+  <form class="kapitalwise">
+    <input id="name" class="Textfields" type="text" placeholder="name">
+    <input id="firstname" class="Textfields" type="text" placeholder="firstname">
+    <input id="lastname" class="Textfields" type="text" placeholder="lastname">
+  </form>
+  <a href="https://content.com/redirect/6045ff06a29de16a3c70e509" class="urls" id="url1" target="_blank">google</a>
+  <a href="https://content.com/redirect/6045ff06a29de16a3c70e50a" class="urls" id="url2" target="_blank">kapitalwise</a>
+  <a href="https://content.com/redirect/6045ff06a29de16a3c70e50b" class="urls " id="url3" target="_blank">kapitalwise_blogs</a>
+
+  <button id="submit">Submit</button>
+  <button id="apicall">CallApi</button>
+
+  <!-- <script src="cookies.js"></script> -->
+
+  
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+                (function () {
+                        function refreshCSS() {
+                                var sheets = [].slice.call(document.getElementsByTagName("link"));
+                                var head = document.getElementsByTagName("head")[0];
+                                for (var i = 0; i < sheets.length; ++i) {
+                                        var elem = sheets[i];
+                                        var parent = elem.parentElement || head;
+                                        parent.removeChild(elem);
+                                        var rel = elem.rel;
+                                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                                        }
+                                        parent.appendChild(elem);
+                                }
+                        }
+                        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                        var address = protocol + window.location.host + window.location.pathname + '/ws';
+                        var socket = new WebSocket(address);
+                        socket.onmessage = function (msg) {
+                                if (msg.data == 'reload') window.location.reload();
+                                else if (msg.data == 'refreshcss') refreshCSS();
+                        };
+                        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                                console.log('Live reload enabled.');
+                                sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                        }
+                })();
+        }
+        else {
+                console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+</script>
+
+<script src="https://cdn.jsdelivr.net/gh/Kamlesh502/Cookies_js/script-v2.js"></script></body></html>
