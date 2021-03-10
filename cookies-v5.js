@@ -22,7 +22,11 @@ function unique_id() {
 function set_cookie() {
   var cookie_value = unique_id() + unique_id();
   var cookieId = "cookieId";
-  document.cookie = cookieId + "=" + cookie_value;
+  document.cookie =
+    cookieId +
+    "=" +
+    cookie_value +
+    ";path=/" 
 }
 
 function check_status() {
@@ -30,7 +34,7 @@ function check_status() {
 
   if (value == null) {
     set_cookie();
-    window.alert("Cookies has been set");
+    console.log("Cookies has been set");
   } else {
     console.log("Cookies are already set with value:" + value);
   }
@@ -40,10 +44,12 @@ document.addEventListener("DOMContentLoaded", check_status);
 
 
 function sendMessage() {
+  var value = get_cookie();
   var currentURL = window.location.href;
   const body = {
     action: "view",
-    website: currentURL
+    website: currentURL,
+    cookiesId:value
   };
   var xhr = new XMLHttpRequest();
   xhr.open("POST", API_URL+"/sendMessage", false);
