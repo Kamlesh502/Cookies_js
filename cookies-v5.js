@@ -49,7 +49,7 @@ function sendMessage() {
   const body = {
     action: "view",
     website: currentURL,
-    cookiesId:value
+    cookieId:value
   };
   var xhr = new XMLHttpRequest();
   xhr.open("POST", API_URL+"/sendMessage", false);

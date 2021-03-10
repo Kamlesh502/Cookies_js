@@ -44,16 +44,14 @@ document.addEventListener("DOMContentLoaded", check_status);
 
 
 function sendMessage() {
-  var currentURL = window.location.href;
+  var currentURL = window.location;
   const body = {
     action: "view",
     website: currentURL
   };
-  var xhr = new XMLHttpRequest();
-  xhr.open("POST", API_URL+"/sendMessage", false);
-  xhr.send(JSON.stringify(body))
+  // var xhr = new XMLHttpRequest();
+  // xhr.open("POST", API_URL+"/sendMessage", false);
+  // xhr.send(JSON.stringify(body))
   
 }
 document.addEventListener("DOMContentLoaded", sendMessage);
-
-this is testing;
