@@ -1,4 +1,4 @@
-var API_URL = "https://ncapi.kapitalwise.com";
+var API_URL = "http://100.25.151.35:1340";
 
 function get_cookie() {
   var name = "cookieId";
